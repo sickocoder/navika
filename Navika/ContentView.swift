@@ -7,18 +7,35 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+  @AppStorage("isUserSignedIn") var isUserSignedIn: Bool = false
+  @Environment(AppRouting.self) private var router
+  
+	var body: some View {
+    @Bindable var router = router
+    
+    NavigationStack(path: $router.routes) {
+      ZStack {
+        if isUserSignedIn {
+          AppNavigationScreen()
+        } else {
+          WelcomeScreen()
         }
-        .padding()
+      }
+      .navigationDestination(for: Route.self) { route in
+        router.destination(for: route)
+      }
     }
+    
+	}
 }
 
+
 #Preview {
-    ContentView()
+	ContentView()
+    .environment(AppRouting())
 }
+
+
+

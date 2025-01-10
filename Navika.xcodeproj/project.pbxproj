@@ -7,18 +7,191 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0AF0482C7F678700426A8C /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF0472C7F678300426A8C /* GlobalConstants.swift */; };
+		FB0AF04A2C7F782900426A8C /* CollapsableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF0492C7F781300426A8C /* CollapsableHeaderView.swift */; };
+		FB0EC39E2C874E9E00B36963 /* FirestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EC39D2C874E9900B36963 /* FirestoreHelper.swift */; };
+		FB0EC3A12C87AFC700B36963 /* TasksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EC3A02C87AFC000B36963 /* TasksScreen.swift */; };
+		FB0EC3A32C87B17200B36963 /* EmptyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EC3A22C87B16D00B36963 /* EmptyList.swift */; };
+		FB3388D12C85D24100C449EC /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3388D02C85D23700C449EC /* WelcomeScreen.swift */; };
+		FB3388D42C85F0D200C449EC /* AuthForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3388D32C85F0CC00C449EC /* AuthForm.swift */; };
+		FB3388D82C85F15D00C449EC /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3388D72C85F15900C449EC /* WelcomeView.swift */; };
+		FB3C56182C88BA7B007AE5C1 /* FTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C56172C88BA78007AE5C1 /* FTUser.swift */; };
+		FB3C561C2C89E280007AE5C1 /* FirestoreEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C561B2C89E274007AE5C1 /* FirestoreEnums.swift */; };
+		FB3C561F2C89E33D007AE5C1 /* SignInWithEmailPasswordForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C561E2C89E332007AE5C1 /* SignInWithEmailPasswordForm.swift */; };
+		FB575A5C2C62347100926082 /* TabsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A5B2C62347100926082 /* TabsEnum.swift */; };
+		FB575A5F2C62349400926082 /* TabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A5E2C62349400926082 /* TabItemModel.swift */; };
+		FB575A612C6234D500926082 /* AppNavigationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A602C6234D500926082 /* AppNavigationConstants.swift */; };
+		FB575A642C62351900926082 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A632C62351900926082 /* TabItem.swift */; };
+		FB575A662C62353E00926082 /* HomeTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A652C62353E00926082 /* HomeTabItem.swift */; };
+		FB575A682C62358000926082 /* AppNavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A672C62358000926082 /* AppNavigationScreen.swift */; };
+		FB575A6A2C6235EA00926082 /* BottomTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A692C6235EA00926082 /* BottomTabs.swift */; };
+		FB6B27E92C7C80300022E4C8 /* NAHabitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B27E82C7C80280022E4C8 /* NAHabitModel.swift */; };
+		FB79C7802D2EFDB00016793A /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C77F2D2EFDB00016793A /* Sequence+Extensions.swift */; };
+		FB7A60092C6CE91300ED4405 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A60082C6CE91300ED4405 /* HomeScreenViewModel.swift */; };
+		FB7A600B2C6CF8C700ED4405 /* HabitFrequencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A600A2C6CF8C700ED4405 /* HabitFrequencyModel.swift */; };
+		FB84F17A2C9B81AC00F474E2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1792C9B81AC00F474E2 /* FirebaseAnalytics */; };
+		FB84F17C2C9B81AC00F474E2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F17B2C9B81AC00F474E2 /* FirebaseAnalyticsOnDeviceConversion */; };
+		FB84F17E2C9B81AC00F474E2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F17D2C9B81AC00F474E2 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		FB84F1802C9B81AC00F474E2 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F17F2C9B81AC00F474E2 /* FirebaseAppCheck */; };
+		FB84F1822C9B81AC00F474E2 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1812C9B81AC00F474E2 /* FirebaseAppDistribution-Beta */; };
+		FB84F1842C9B81AC00F474E2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1832C9B81AC00F474E2 /* FirebaseAuth */; };
+		FB84F1862C9B81AC00F474E2 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1852C9B81AC00F474E2 /* FirebaseAuthCombine-Community */; };
+		FB84F1882C9B81AC00F474E2 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1872C9B81AC00F474E2 /* FirebaseCrashlytics */; };
+		FB84F18A2C9B81AC00F474E2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1892C9B81AC00F474E2 /* FirebaseDatabase */; };
+		FB84F18C2C9B81AC00F474E2 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F18B2C9B81AC00F474E2 /* FirebaseDynamicLinks */; };
+		FB84F18E2C9B81AC00F474E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F18D2C9B81AC00F474E2 /* FirebaseFirestore */; };
+		FB84F1902C9B81AC00F474E2 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F18F2C9B81AC00F474E2 /* FirebaseFirestoreCombine-Community */; };
+		FB84F1922C9B81AC00F474E2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1912C9B81AC00F474E2 /* FirebaseFunctions */; };
+		FB84F1942C9B81AC00F474E2 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1932C9B81AC00F474E2 /* FirebaseFunctionsCombine-Community */; };
+		FB84F1962C9B81AC00F474E2 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1952C9B81AC00F474E2 /* FirebaseInAppMessaging-Beta */; };
+		FB84F1982C9B81AC00F474E2 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1972C9B81AC00F474E2 /* FirebaseInstallations */; };
+		FB84F19A2C9B81AC00F474E2 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1992C9B81AC00F474E2 /* FirebaseMLModelDownloader */; };
+		FB84F19C2C9B81AC00F474E2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F19B2C9B81AC00F474E2 /* FirebaseMessaging */; };
+		FB84F19E2C9B81AC00F474E2 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F19D2C9B81AC00F474E2 /* FirebasePerformance */; };
+		FB84F1A02C9B81AC00F474E2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F19F2C9B81AC00F474E2 /* FirebaseRemoteConfig */; };
+		FB84F1A22C9B81AC00F474E2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1A12C9B81AC00F474E2 /* FirebaseStorage */; };
+		FB84F1A42C9B81AC00F474E2 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1A32C9B81AC00F474E2 /* FirebaseStorageCombine-Community */; };
+		FB84F1A62C9B81AC00F474E2 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = FB84F1A52C9B81AC00F474E2 /* FirebaseVertexAI-Preview */; };
+		FB8677862C8606990059F05B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB8677852C8606990059F05B /* GoogleService-Info.plist */; };
+		FB86778D2C860BAF0059F05B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86778C2C860BAF0059F05B /* AuthViewModel.swift */; };
+		FB8677BF2C8610A40059F05B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FB8677BE2C8610A40059F05B /* GoogleSignIn */; };
+		FB8677C12C8610A40059F05B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB8677C02C8610A40059F05B /* GoogleSignInSwift */; };
+		FB86A89E2C6B6DBC00823B4D /* HomeScreenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86A89D2C6B6DBC00823B4D /* HomeScreenConstants.swift */; };
+		FB86A8A02C6B6E5300823B4D /* TimeOfDaysTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86A89F2C6B6E5300823B4D /* TimeOfDaysTabs.swift */; };
+		FB86D06C2C7DD8B600A70B60 /* HabitSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86D06B2C7DD8AB00A70B60 /* HabitSettings.swift */; };
+		FB90639B2C735B0700415DA8 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90639A2C735B0700415DA8 /* Color+Extensions.swift */; };
+		FBA6DFB52C88686900CF16C4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FBA6DFB42C88686900CF16C4 /* Lottie */; };
+		FBAFEACF2C6A005000ACFA69 /* SetFrequencyStepReminderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAFEACE2C6A005000ACFA69 /* SetFrequencyStepReminderSheet.swift */; };
+		FBAFEAD12C6A018500ACFA69 /* NAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAFEAD02C6A018500ACFA69 /* NAButton.swift */; };
+		FBAFEAD32C6A408F00ACFA69 /* RemindersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAFEAD22C6A408F00ACFA69 /* RemindersList.swift */; };
+		FBBA86AF2C6255AC00CA0C8E /* CreateHabitScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBA86AE2C6255AC00CA0C8E /* CreateHabitScreen.swift */; };
+		FBCCC2612C681D8C00D9AD93 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCC2602C681D8C00D9AD93 /* Int+Extensions.swift */; };
+		FBCCC2642C681DBB00D9AD93 /* CreateHabitSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCC2632C681DBB00D9AD93 /* CreateHabitSteps.swift */; };
+		FBCCC2662C681FAE00D9AD93 /* SetFrequencyStep+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCC2652C681FAE00D9AD93 /* SetFrequencyStep+Extensions.swift */; };
+		FBCCC2682C68200A00D9AD93 /* NAFormContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCC2672C68200A00D9AD93 /* NAFormContainer.swift */; };
+		FBCCC26A2C68228100D9AD93 /* NAInlinePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCCC2692C68228100D9AD93 /* NAInlinePicker.swift */; };
+		FBD1685A2C8B0B0F006D0F3D /* AppRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD168592C8B0B0F006D0F3D /* AppRouting.swift */; };
+		FBD1685C2C8B0B2E006D0F3D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD1685B2C8B0B2E006D0F3D /* Route.swift */; };
+		FBD1685F2C8B110F006D0F3D /* HabitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD1685E2C8B1105006D0F3D /* HabitDetails.swift */; };
+		FBD351842C85AE24002453ED /* NACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD351832C85AE21002453ED /* NACalendar.swift */; };
+		FBD351872C85B111002453ED /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD351862C85B10F002453ED /* DateValue.swift */; };
+		FBD758142C60E04F00A11E2C /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD758132C60E04F00A11E2C /* Header.swift */; };
+		FBD758162C60E15B00A11E2C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD758152C60E15B00A11E2C /* HomeScreen.swift */; };
+		FBE249E52C66209900AC727C /* NASlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249E42C66209900AC727C /* NASlideView.swift */; };
+		FBE249E82C6621C900AC727C /* ChooseCategoryStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249E72C6621C900AC727C /* ChooseCategoryStep.swift */; };
+		FBE249EA2C66221C00AC727C /* ChooseCategoryStep+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249E92C66221C00AC727C /* ChooseCategoryStep+Extensions.swift */; };
+		FBE249EC2C662C9500AC727C /* NAOpacityAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249EB2C662C9500AC727C /* NAOpacityAnimatedView.swift */; };
+		FBE249F02C662D4200AC727C /* SetFrequencyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249EF2C662D4200AC727C /* SetFrequencyStep.swift */; };
+		FBE249F22C6644EB00AC727C /* NAStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249F12C6644EB00AC727C /* NAStepView.swift */; };
+		FBE249F52C66476D00AC727C /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249F42C66476D00AC727C /* EdgeBorder.swift */; };
+		FBE249F72C66478700AC727C /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249F62C66478700AC727C /* RoundedCorner.swift */; };
+		FBE249F92C6649A100AC727C /* NATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249F82C6649A100AC727C /* NATextField.swift */; };
+		FBE249FB2C66628900AC727C /* NAHorizontalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249FA2C66628900AC727C /* NAHorizontalPicker.swift */; };
+		FBE249FE2C66638F00AC727C /* NAGenericType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249FD2C66638F00AC727C /* NAGenericType.swift */; };
+		FBE24A002C66644500AC727C /* DaysOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE249FF2C66644500AC727C /* DaysOfWeek.swift */; };
+		FBE24A022C666DFB00AC727C /* SetFrequencyStepSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE24A012C666DFB00AC727C /* SetFrequencyStepSheet.swift */; };
+		FBE24A042C66755B00AC727C /* Set+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE24A032C66755B00AC727C /* Set+Extensions.swift */; };
+		FBE8F9892C8DEFF20056EE31 /* HabitWithTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8F9882C8DEFF20056EE31 /* HabitWithTasks.swift */; };
+		FBE8F98B2C8DF0250056EE31 /* CurvedArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8F98A2C8DF0250056EE31 /* CurvedArrow.swift */; };
+		FBE8F98D2C8DF03A0056EE31 /* HabitTaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8F98C2C8DF03A0056EE31 /* HabitTaskRow.swift */; };
+		FBE97D452D2C83E100C649B9 /* TasksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE97D442D2C83DC00C649B9 /* TasksService.swift */; };
+		FBED4CE42C6373F200B34FE1 /* HabitCategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED4CE32C6373F200B34FE1 /* HabitCategoryItem.swift */; };
+		FBED4CE62C6373FE00B34FE1 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED4CE52C6373FE00B34FE1 /* CategoryList.swift */; };
+		FBED4CE82C63745300B34FE1 /* CreateHabitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED4CE72C63744F00B34FE1 /* CreateHabitConstants.swift */; };
+		FBF1E61E2C77962D00177608 /* NACircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1E61D2C77962A00177608 /* NACircularProgressView.swift */; };
+		FBF1E6202C77DB8900177608 /* HabitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1E61F2C77DB8400177608 /* HabitCard.swift */; };
 		FBF387562C5ED90500839BEC /* NavikaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF387552C5ED90500839BEC /* NavikaApp.swift */; };
 		FBF387582C5ED90500839BEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF387572C5ED90500839BEC /* ContentView.swift */; };
 		FBF3875A2C5ED90600839BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF387592C5ED90600839BEC /* Assets.xcassets */; };
 		FBF3875D2C5ED90600839BEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF3875C2C5ED90600839BEC /* Preview Assets.xcassets */; };
+		FBF387652C5EDBD800839BEC /* NAContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF387642C5EDBD800839BEC /* NAContainerView.swift */; };
+		FBF387692C5EDE7600839BEC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF387682C5EDE7600839BEC /* Date+Extensions.swift */; };
+		FBF3876C2C5EDEEF00839BEC /* TimeOfDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3876B2C5EDEEF00839BEC /* TimeOfDay.swift */; };
+		FBF3876F2C5EDF6700839BEC /* WeekDaysViewDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3876E2C5EDF6700839BEC /* WeekDaysViewDateModel.swift */; };
+		FBF387712C5EE38700839BEC /* WeekDayPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF387702C5EE38700839BEC /* WeekDayPill.swift */; };
+		FBF387732C5EE9BB00839BEC /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF387722C5EE9BB00839BEC /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB0AF0472C7F678300426A8C /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		FB0AF0492C7F781300426A8C /* CollapsableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableHeaderView.swift; sourceTree = "<group>"; };
+		FB0EC39D2C874E9900B36963 /* FirestoreHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreHelper.swift; sourceTree = "<group>"; };
+		FB0EC3A02C87AFC000B36963 /* TasksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksScreen.swift; sourceTree = "<group>"; };
+		FB0EC3A22C87B16D00B36963 /* EmptyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyList.swift; sourceTree = "<group>"; };
+		FB3388D02C85D23700C449EC /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		FB3388D32C85F0CC00C449EC /* AuthForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthForm.swift; sourceTree = "<group>"; };
+		FB3388D72C85F15900C449EC /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		FB3C56172C88BA78007AE5C1 /* FTUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUser.swift; sourceTree = "<group>"; };
+		FB3C561B2C89E274007AE5C1 /* FirestoreEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreEnums.swift; sourceTree = "<group>"; };
+		FB3C561E2C89E332007AE5C1 /* SignInWithEmailPasswordForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithEmailPasswordForm.swift; sourceTree = "<group>"; };
+		FB575A5B2C62347100926082 /* TabsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsEnum.swift; sourceTree = "<group>"; };
+		FB575A5E2C62349400926082 /* TabItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemModel.swift; sourceTree = "<group>"; };
+		FB575A602C6234D500926082 /* AppNavigationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationConstants.swift; sourceTree = "<group>"; };
+		FB575A632C62351900926082 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		FB575A652C62353E00926082 /* HomeTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabItem.swift; sourceTree = "<group>"; };
+		FB575A672C62358000926082 /* AppNavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationScreen.swift; sourceTree = "<group>"; };
+		FB575A692C6235EA00926082 /* BottomTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabs.swift; sourceTree = "<group>"; };
+		FB6B27E82C7C80280022E4C8 /* NAHabitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAHabitModel.swift; sourceTree = "<group>"; };
+		FB79C77F2D2EFDB00016793A /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
+		FB7A60082C6CE91300ED4405 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		FB7A600A2C6CF8C700ED4405 /* HabitFrequencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitFrequencyModel.swift; sourceTree = "<group>"; };
+		FB8677852C8606990059F05B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB8677892C8608C30059F05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FB86778C2C860BAF0059F05B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		FB86A89D2C6B6DBC00823B4D /* HomeScreenConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenConstants.swift; sourceTree = "<group>"; };
+		FB86A89F2C6B6E5300823B4D /* TimeOfDaysTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDaysTabs.swift; sourceTree = "<group>"; };
+		FB86D06B2C7DD8AB00A70B60 /* HabitSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitSettings.swift; sourceTree = "<group>"; };
+		FB90639A2C735B0700415DA8 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		FBAFEACE2C6A005000ACFA69 /* SetFrequencyStepReminderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFrequencyStepReminderSheet.swift; sourceTree = "<group>"; };
+		FBAFEAD02C6A018500ACFA69 /* NAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAButton.swift; sourceTree = "<group>"; };
+		FBAFEAD22C6A408F00ACFA69 /* RemindersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersList.swift; sourceTree = "<group>"; };
+		FBBA86AE2C6255AC00CA0C8E /* CreateHabitScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitScreen.swift; sourceTree = "<group>"; };
+		FBCCC2602C681D8C00D9AD93 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		FBCCC2632C681DBB00D9AD93 /* CreateHabitSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitSteps.swift; sourceTree = "<group>"; };
+		FBCCC2652C681FAE00D9AD93 /* SetFrequencyStep+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetFrequencyStep+Extensions.swift"; sourceTree = "<group>"; };
+		FBCCC2672C68200A00D9AD93 /* NAFormContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAFormContainer.swift; sourceTree = "<group>"; };
+		FBCCC2692C68228100D9AD93 /* NAInlinePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAInlinePicker.swift; sourceTree = "<group>"; };
+		FBD168592C8B0B0F006D0F3D /* AppRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouting.swift; sourceTree = "<group>"; };
+		FBD1685B2C8B0B2E006D0F3D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		FBD1685E2C8B1105006D0F3D /* HabitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetails.swift; sourceTree = "<group>"; };
+		FBD351832C85AE21002453ED /* NACalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NACalendar.swift; sourceTree = "<group>"; };
+		FBD351862C85B10F002453ED /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		FBD758132C60E04F00A11E2C /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		FBD758152C60E15B00A11E2C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FBE249E42C66209900AC727C /* NASlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASlideView.swift; sourceTree = "<group>"; };
+		FBE249E72C6621C900AC727C /* ChooseCategoryStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoryStep.swift; sourceTree = "<group>"; };
+		FBE249E92C66221C00AC727C /* ChooseCategoryStep+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseCategoryStep+Extensions.swift"; sourceTree = "<group>"; };
+		FBE249EB2C662C9500AC727C /* NAOpacityAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAOpacityAnimatedView.swift; sourceTree = "<group>"; };
+		FBE249EF2C662D4200AC727C /* SetFrequencyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFrequencyStep.swift; sourceTree = "<group>"; };
+		FBE249F12C6644EB00AC727C /* NAStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAStepView.swift; sourceTree = "<group>"; };
+		FBE249F42C66476D00AC727C /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		FBE249F62C66478700AC727C /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		FBE249F82C6649A100AC727C /* NATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATextField.swift; sourceTree = "<group>"; };
+		FBE249FA2C66628900AC727C /* NAHorizontalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAHorizontalPicker.swift; sourceTree = "<group>"; };
+		FBE249FD2C66638F00AC727C /* NAGenericType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAGenericType.swift; sourceTree = "<group>"; };
+		FBE249FF2C66644500AC727C /* DaysOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysOfWeek.swift; sourceTree = "<group>"; };
+		FBE24A012C666DFB00AC727C /* SetFrequencyStepSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFrequencyStepSheet.swift; sourceTree = "<group>"; };
+		FBE24A032C66755B00AC727C /* Set+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+Extensions.swift"; sourceTree = "<group>"; };
+		FBE8F9882C8DEFF20056EE31 /* HabitWithTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitWithTasks.swift; sourceTree = "<group>"; };
+		FBE8F98A2C8DF0250056EE31 /* CurvedArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedArrow.swift; sourceTree = "<group>"; };
+		FBE8F98C2C8DF03A0056EE31 /* HabitTaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTaskRow.swift; sourceTree = "<group>"; };
+		FBE97D442D2C83DC00C649B9 /* TasksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksService.swift; sourceTree = "<group>"; };
+		FBED4CE32C6373F200B34FE1 /* HabitCategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCategoryItem.swift; sourceTree = "<group>"; };
+		FBED4CE52C6373FE00B34FE1 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		FBED4CE72C63744F00B34FE1 /* CreateHabitConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitConstants.swift; sourceTree = "<group>"; };
+		FBF1E61D2C77962A00177608 /* NACircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NACircularProgressView.swift; sourceTree = "<group>"; };
+		FBF1E61F2C77DB8400177608 /* HabitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCard.swift; sourceTree = "<group>"; };
 		FBF387522C5ED90500839BEC /* Navika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF387552C5ED90500839BEC /* NavikaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavikaApp.swift; sourceTree = "<group>"; };
 		FBF387572C5ED90500839BEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBF387592C5ED90600839BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBF3875C2C5ED90600839BEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBF387642C5EDBD800839BEC /* NAContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAContainerView.swift; sourceTree = "<group>"; };
+		FBF387682C5EDE7600839BEC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		FBF3876B2C5EDEEF00839BEC /* TimeOfDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDay.swift; sourceTree = "<group>"; };
+		FBF3876E2C5EDF6700839BEC /* WeekDaysViewDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysViewDateModel.swift; sourceTree = "<group>"; };
+		FBF387702C5EE38700839BEC /* WeekDayPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayPill.swift; sourceTree = "<group>"; };
+		FBF387722C5EE9BB00839BEC /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +199,339 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB84F19E2C9B81AC00F474E2 /* FirebasePerformance in Frameworks */,
+				FBA6DFB52C88686900CF16C4 /* Lottie in Frameworks */,
+				FB84F1942C9B81AC00F474E2 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				FB84F17E2C9B81AC00F474E2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				FB8677BF2C8610A40059F05B /* GoogleSignIn in Frameworks */,
+				FB84F1A22C9B81AC00F474E2 /* FirebaseStorage in Frameworks */,
+				FB84F1902C9B81AC00F474E2 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				FB84F17C2C9B81AC00F474E2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				FB84F1842C9B81AC00F474E2 /* FirebaseAuth in Frameworks */,
+				FB84F19A2C9B81AC00F474E2 /* FirebaseMLModelDownloader in Frameworks */,
+				FB84F1882C9B81AC00F474E2 /* FirebaseCrashlytics in Frameworks */,
+				FB84F19C2C9B81AC00F474E2 /* FirebaseMessaging in Frameworks */,
+				FB84F1982C9B81AC00F474E2 /* FirebaseInstallations in Frameworks */,
+				FB84F18A2C9B81AC00F474E2 /* FirebaseDatabase in Frameworks */,
+				FB84F1802C9B81AC00F474E2 /* FirebaseAppCheck in Frameworks */,
+				FB84F17A2C9B81AC00F474E2 /* FirebaseAnalytics in Frameworks */,
+				FB84F1962C9B81AC00F474E2 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				FB8677C12C8610A40059F05B /* GoogleSignInSwift in Frameworks */,
+				FB84F1922C9B81AC00F474E2 /* FirebaseFunctions in Frameworks */,
+				FB84F1A02C9B81AC00F474E2 /* FirebaseRemoteConfig in Frameworks */,
+				FB84F1822C9B81AC00F474E2 /* FirebaseAppDistribution-Beta in Frameworks */,
+				FB84F1862C9B81AC00F474E2 /* FirebaseAuthCombine-Community in Frameworks */,
+				FB84F1A42C9B81AC00F474E2 /* FirebaseStorageCombine-Community in Frameworks */,
+				FB84F18C2C9B81AC00F474E2 /* FirebaseDynamicLinks in Frameworks */,
+				FB84F1A62C9B81AC00F474E2 /* FirebaseVertexAI-Preview in Frameworks */,
+				FB84F18E2C9B81AC00F474E2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0AF0462C7F677C00426A8C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FB0AF0472C7F678300426A8C /* GlobalConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FB0EC39B2C874E8600B36963 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EC39C2C874E8C00B36963 /* Firebase */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		FB0EC39C2C874E8C00B36963 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				FBE97D432D2C83D400C649B9 /* Services */,
+				FB3C561A2C89E26F007AE5C1 /* Enums */,
+				FB0EC39D2C874E9900B36963 /* FirestoreHelper.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		FB0EC39F2C87AFAD00B36963 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8F9852C8DEFDF0056EE31 /* Views */,
+				FB0EC3A02C87AFC000B36963 /* TasksScreen.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		FB3388CE2C85D21900C449EC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FB3388CF2C85D22900C449EC /* Welcome */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FB3388CF2C85D22900C449EC /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				FB3388D62C85F15100C449EC /* WelcomeView */,
+				FB3388D22C85F0C000C449EC /* AuthForm */,
+				FB3C561D2C89E31A007AE5C1 /* EmailPasswordForm */,
+				FB3388D02C85D23700C449EC /* WelcomeScreen.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		FB3388D22C85F0C000C449EC /* AuthForm */ = {
+			isa = PBXGroup;
+			children = (
+				FB86778C2C860BAF0059F05B /* AuthViewModel.swift */,
+				FB3388D32C85F0CC00C449EC /* AuthForm.swift */,
+			);
+			path = AuthForm;
+			sourceTree = "<group>";
+		};
+		FB3388D62C85F15100C449EC /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				FB3388D72C85F15900C449EC /* WelcomeView.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		FB3C56162C88BA70007AE5C1 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C56172C88BA78007AE5C1 /* FTUser.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		FB3C561A2C89E26F007AE5C1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C561B2C89E274007AE5C1 /* FirestoreEnums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FB3C561D2C89E31A007AE5C1 /* EmailPasswordForm */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C561E2C89E332007AE5C1 /* SignInWithEmailPasswordForm.swift */,
+			);
+			path = EmailPasswordForm;
+			sourceTree = "<group>";
+		};
+		FB575A592C62345500926082 /* AppNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				FB575A622C62350D00926082 /* Views */,
+				FB575A5D2C62348A00926082 /* Model */,
+				FB575A5A2C62346100926082 /* Enums */,
+				FB575A602C6234D500926082 /* AppNavigationConstants.swift */,
+				FB575A672C62358000926082 /* AppNavigationScreen.swift */,
+			);
+			path = AppNavigation;
+			sourceTree = "<group>";
+		};
+		FB575A5A2C62346100926082 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FB575A5B2C62347100926082 /* TabsEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FB575A5D2C62348A00926082 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB575A5E2C62349400926082 /* TabItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB575A622C62350D00926082 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB575A632C62351900926082 /* TabItem.swift */,
+				FB575A652C62353E00926082 /* HomeTabItem.swift */,
+				FB575A692C6235EA00926082 /* BottomTabs.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBBA86AD2C62559700CA0C8E /* CreateHabit */ = {
+			isa = PBXGroup;
+			children = (
+				FBCCC2622C681DAD00D9AD93 /* Enums */,
+				FBED4CE22C6373DA00B34FE1 /* Models */,
+				FBE249E62C6621B900AC727C /* Steps */,
+				FBED4CE72C63744F00B34FE1 /* CreateHabitConstants.swift */,
+				FBBA86AE2C6255AC00CA0C8E /* CreateHabitScreen.swift */,
+			);
+			path = CreateHabit;
+			sourceTree = "<group>";
+		};
+		FBCCC2622C681DAD00D9AD93 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FBCCC2632C681DBB00D9AD93 /* CreateHabitSteps.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FBD168582C8B0ACB006D0F3D /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				FBD1685B2C8B0B2E006D0F3D /* Route.swift */,
+				FBD168592C8B0B0F006D0F3D /* AppRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		FBD1685D2C8B10DC006D0F3D /* HabitDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FBD1685E2C8B1105006D0F3D /* HabitDetails.swift */,
+			);
+			path = HabitDetails;
+			sourceTree = "<group>";
+		};
+		FBD351822C85AE18002453ED /* NACalendar */ = {
+			isa = PBXGroup;
+			children = (
+				FBD351852C85B104002453ED /* Model */,
+				FBD351832C85AE21002453ED /* NACalendar.swift */,
+			);
+			path = NACalendar;
+			sourceTree = "<group>";
+		};
+		FBD351852C85B104002453ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBD351862C85B10F002453ED /* DateValue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBD758102C60E02C00A11E2C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FBD1685D2C8B10DC006D0F3D /* HabitDetails */,
+				FB3388CE2C85D21900C449EC /* Auth */,
+				FBE249FC2C66637E00AC727C /* Protocols */,
+				FB575A592C62345500926082 /* AppNavigation */,
+				FBD758112C60E03200A11E2C /* Home */,
+				FBBA86AD2C62559700CA0C8E /* CreateHabit */,
+				FB0EC39F2C87AFAD00B36963 /* Tasks */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FBD758112C60E03200A11E2C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FBD758122C60E03E00A11E2C /* Views */,
+				FBD758152C60E15B00A11E2C /* HomeScreen.swift */,
+				FB86D06B2C7DD8AB00A70B60 /* HabitSettings.swift */,
+				FB86A89D2C6B6DBC00823B4D /* HomeScreenConstants.swift */,
+				FB7A60082C6CE91300ED4405 /* HomeScreenViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FBD758122C60E03E00A11E2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB0AF0492C7F781300426A8C /* CollapsableHeaderView.swift */,
+				FBF1E61F2C77DB8400177608 /* HabitCard.swift */,
+				FBF387702C5EE38700839BEC /* WeekDayPill.swift */,
+				FBD758132C60E04F00A11E2C /* Header.swift */,
+				FBAFEAD22C6A408F00ACFA69 /* RemindersList.swift */,
+				FB86A89F2C6B6E5300823B4D /* TimeOfDaysTabs.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBE249E62C6621B900AC727C /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				FBE249ED2C662D2500AC727C /* ChooseCategoryStep */,
+				FBE249EE2C662D3000AC727C /* SetFrequencyStep */,
+				FBE249F12C6644EB00AC727C /* NAStepView.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		FBE249ED2C662D2500AC727C /* ChooseCategoryStep */ = {
+			isa = PBXGroup;
+			children = (
+				FBE249E72C6621C900AC727C /* ChooseCategoryStep.swift */,
+				FBE249E92C66221C00AC727C /* ChooseCategoryStep+Extensions.swift */,
+			);
+			path = ChooseCategoryStep;
+			sourceTree = "<group>";
+		};
+		FBE249EE2C662D3000AC727C /* SetFrequencyStep */ = {
+			isa = PBXGroup;
+			children = (
+				FBE249EF2C662D4200AC727C /* SetFrequencyStep.swift */,
+				FBCCC2652C681FAE00D9AD93 /* SetFrequencyStep+Extensions.swift */,
+				FBE24A012C666DFB00AC727C /* SetFrequencyStepSheet.swift */,
+				FBAFEACE2C6A005000ACFA69 /* SetFrequencyStepReminderSheet.swift */,
+			);
+			path = SetFrequencyStep;
+			sourceTree = "<group>";
+		};
+		FBE249F32C66476100AC727C /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8F98A2C8DF0250056EE31 /* CurvedArrow.swift */,
+				FBE249F42C66476D00AC727C /* EdgeBorder.swift */,
+				FBE249F62C66478700AC727C /* RoundedCorner.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		FBE249FC2C66637E00AC727C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FBE249FD2C66638F00AC727C /* NAGenericType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FBE8F9852C8DEFDF0056EE31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8F98C2C8DF03A0056EE31 /* HabitTaskRow.swift */,
+				FBE8F9882C8DEFF20056EE31 /* HabitWithTasks.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBE97D432D2C83D400C649B9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBE97D442D2C83DC00C649B9 /* TasksService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FBED4CE22C6373DA00B34FE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBED4CE52C6373FE00B34FE1 /* CategoryList.swift */,
+				FBED4CE32C6373F200B34FE1 /* HabitCategoryItem.swift */,
+				FB7A600A2C6CF8C700ED4405 /* HabitFrequencyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FBF387492C5ED90500839BEC = {
 			isa = PBXGroup;
 			children = (
@@ -51,13 +551,24 @@
 		FBF387542C5ED90500839BEC /* Navika */ = {
 			isa = PBXGroup;
 			children = (
+				FB8677892C8608C30059F05B /* Info.plist */,
+				FB8677852C8606990059F05B /* GoogleService-Info.plist */,
+				FB0EC39B2C874E8600B36963 /* Infra */,
+				FBF3876D2C5EDF5D00839BEC /* Models */,
+				FBF3876A2C5EDEE200839BEC /* Enums */,
+				FBF387662C5EDE4900839BEC /* Utils */,
+				FBF387632C5EDB9700839BEC /* Views */,
+				FBD758102C60E02C00A11E2C /* Screens */,
 				FBF387552C5ED90500839BEC /* NavikaApp.swift */,
 				FBF387572C5ED90500839BEC /* ContentView.swift */,
 				FBF387592C5ED90600839BEC /* Assets.xcassets */,
 				FBF3875B2C5ED90600839BEC /* Preview Content */,
 			);
+			indentWidth = 2;
 			path = Navika;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		FBF3875B2C5ED90600839BEC /* Preview Content */ = {
 			isa = PBXGroup;
@@ -65,6 +576,67 @@
 				FBF3875C2C5ED90600839BEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBF387632C5EDB9700839BEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EC3A22C87B16D00B36963 /* EmptyList.swift */,
+				FBD351822C85AE18002453ED /* NACalendar */,
+				FBE249F32C66476100AC727C /* Shapes */,
+				FBF1E61D2C77962A00177608 /* NACircularProgressView.swift */,
+				FBF387642C5EDBD800839BEC /* NAContainerView.swift */,
+				FBE249E42C66209900AC727C /* NASlideView.swift */,
+				FBE249EB2C662C9500AC727C /* NAOpacityAnimatedView.swift */,
+				FBE249F82C6649A100AC727C /* NATextField.swift */,
+				FBE249FA2C66628900AC727C /* NAHorizontalPicker.swift */,
+				FBCCC2672C68200A00D9AD93 /* NAFormContainer.swift */,
+				FBCCC2692C68228100D9AD93 /* NAInlinePicker.swift */,
+				FBAFEAD02C6A018500ACFA69 /* NAButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBF387662C5EDE4900839BEC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FBD168582C8B0ACB006D0F3D /* Routing */,
+				FB0AF0462C7F677C00426A8C /* Constants */,
+				FBF387672C5EDE6600839BEC /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FBF387672C5EDE6600839BEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB79C77F2D2EFDB00016793A /* Sequence+Extensions.swift */,
+				FBF387682C5EDE7600839BEC /* Date+Extensions.swift */,
+				FBF387722C5EE9BB00839BEC /* View+Extensions.swift */,
+				FBE24A032C66755B00AC727C /* Set+Extensions.swift */,
+				FBCCC2602C681D8C00D9AD93 /* Int+Extensions.swift */,
+				FB90639A2C735B0700415DA8 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FBF3876A2C5EDEE200839BEC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FBF3876B2C5EDEEF00839BEC /* TimeOfDay.swift */,
+				FBE249FF2C66644500AC727C /* DaysOfWeek.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		FBF3876D2C5EDF5D00839BEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C56162C88BA70007AE5C1 /* Firestore */,
+				FB6B27E82C7C80280022E4C8 /* NAHabitModel.swift */,
+				FBF3876E2C5EDF6700839BEC /* WeekDaysViewDateModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +655,34 @@
 			dependencies = (
 			);
 			name = Navika;
+			packageProductDependencies = (
+				FB8677BE2C8610A40059F05B /* GoogleSignIn */,
+				FB8677C02C8610A40059F05B /* GoogleSignInSwift */,
+				FBA6DFB42C88686900CF16C4 /* Lottie */,
+				FB84F1792C9B81AC00F474E2 /* FirebaseAnalytics */,
+				FB84F17B2C9B81AC00F474E2 /* FirebaseAnalyticsOnDeviceConversion */,
+				FB84F17D2C9B81AC00F474E2 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				FB84F17F2C9B81AC00F474E2 /* FirebaseAppCheck */,
+				FB84F1812C9B81AC00F474E2 /* FirebaseAppDistribution-Beta */,
+				FB84F1832C9B81AC00F474E2 /* FirebaseAuth */,
+				FB84F1852C9B81AC00F474E2 /* FirebaseAuthCombine-Community */,
+				FB84F1872C9B81AC00F474E2 /* FirebaseCrashlytics */,
+				FB84F1892C9B81AC00F474E2 /* FirebaseDatabase */,
+				FB84F18B2C9B81AC00F474E2 /* FirebaseDynamicLinks */,
+				FB84F18D2C9B81AC00F474E2 /* FirebaseFirestore */,
+				FB84F18F2C9B81AC00F474E2 /* FirebaseFirestoreCombine-Community */,
+				FB84F1912C9B81AC00F474E2 /* FirebaseFunctions */,
+				FB84F1932C9B81AC00F474E2 /* FirebaseFunctionsCombine-Community */,
+				FB84F1952C9B81AC00F474E2 /* FirebaseInAppMessaging-Beta */,
+				FB84F1972C9B81AC00F474E2 /* FirebaseInstallations */,
+				FB84F1992C9B81AC00F474E2 /* FirebaseMLModelDownloader */,
+				FB84F19B2C9B81AC00F474E2 /* FirebaseMessaging */,
+				FB84F19D2C9B81AC00F474E2 /* FirebasePerformance */,
+				FB84F19F2C9B81AC00F474E2 /* FirebaseRemoteConfig */,
+				FB84F1A12C9B81AC00F474E2 /* FirebaseStorage */,
+				FB84F1A32C9B81AC00F474E2 /* FirebaseStorageCombine-Community */,
+				FB84F1A52C9B81AC00F474E2 /* FirebaseVertexAI-Preview */,
+			);
 			productName = Navika;
 			productReference = FBF387522C5ED90500839BEC /* Navika.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +711,11 @@
 				Base,
 			);
 			mainGroup = FBF387492C5ED90500839BEC;
+			packageReferences = (
+				FB8677BD2C8610A40059F05B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FBA6DFB32C88686900CF16C4 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FBF387532C5ED90500839BEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +732,7 @@
 			files = (
 				FBF3875D2C5ED90600839BEC /* Preview Assets.xcassets in Resources */,
 				FBF3875A2C5ED90600839BEC /* Assets.xcassets in Resources */,
+				FB8677862C8606990059F05B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +743,80 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAFEAD12C6A018500ACFA69 /* NAButton.swift in Sources */,
+				FBE8F9892C8DEFF20056EE31 /* HabitWithTasks.swift in Sources */,
+				FBF387712C5EE38700839BEC /* WeekDayPill.swift in Sources */,
+				FB3388D12C85D24100C449EC /* WelcomeScreen.swift in Sources */,
+				FBE249FB2C66628900AC727C /* NAHorizontalPicker.swift in Sources */,
+				FBD1685A2C8B0B0F006D0F3D /* AppRouting.swift in Sources */,
+				FB6B27E92C7C80300022E4C8 /* NAHabitModel.swift in Sources */,
+				FB3388D42C85F0D200C449EC /* AuthForm.swift in Sources */,
+				FBD351842C85AE24002453ED /* NACalendar.swift in Sources */,
+				FBF387652C5EDBD800839BEC /* NAContainerView.swift in Sources */,
+				FBD1685C2C8B0B2E006D0F3D /* Route.swift in Sources */,
+				FB79C7802D2EFDB00016793A /* Sequence+Extensions.swift in Sources */,
+				FB90639B2C735B0700415DA8 /* Color+Extensions.swift in Sources */,
+				FB0AF04A2C7F782900426A8C /* CollapsableHeaderView.swift in Sources */,
+				FBF3876F2C5EDF6700839BEC /* WeekDaysViewDateModel.swift in Sources */,
+				FBF1E61E2C77962D00177608 /* NACircularProgressView.swift in Sources */,
+				FB575A612C6234D500926082 /* AppNavigationConstants.swift in Sources */,
+				FBE8F98B2C8DF0250056EE31 /* CurvedArrow.swift in Sources */,
+				FBF387692C5EDE7600839BEC /* Date+Extensions.swift in Sources */,
+				FBE249F02C662D4200AC727C /* SetFrequencyStep.swift in Sources */,
+				FBE24A022C666DFB00AC727C /* SetFrequencyStepSheet.swift in Sources */,
+				FB575A682C62358000926082 /* AppNavigationScreen.swift in Sources */,
+				FBE8F98D2C8DF03A0056EE31 /* HabitTaskRow.swift in Sources */,
+				FB0EC39E2C874E9E00B36963 /* FirestoreHelper.swift in Sources */,
+				FBE249EC2C662C9500AC727C /* NAOpacityAnimatedView.swift in Sources */,
+				FBE249E52C66209900AC727C /* NASlideView.swift in Sources */,
+				FBCCC26A2C68228100D9AD93 /* NAInlinePicker.swift in Sources */,
+				FB0EC3A32C87B17200B36963 /* EmptyList.swift in Sources */,
+				FBCCC2662C681FAE00D9AD93 /* SetFrequencyStep+Extensions.swift in Sources */,
+				FBCCC2682C68200A00D9AD93 /* NAFormContainer.swift in Sources */,
+				FB86A8A02C6B6E5300823B4D /* TimeOfDaysTabs.swift in Sources */,
+				FB3C56182C88BA7B007AE5C1 /* FTUser.swift in Sources */,
+				FBE249F22C6644EB00AC727C /* NAStepView.swift in Sources */,
+				FBF3876C2C5EDEEF00839BEC /* TimeOfDay.swift in Sources */,
+				FBED4CE62C6373FE00B34FE1 /* CategoryList.swift in Sources */,
+				FBE24A002C66644500AC727C /* DaysOfWeek.swift in Sources */,
+				FBF1E6202C77DB8900177608 /* HabitCard.swift in Sources */,
+				FBD351872C85B111002453ED /* DateValue.swift in Sources */,
 				FBF387582C5ED90500839BEC /* ContentView.swift in Sources */,
+				FBBA86AF2C6255AC00CA0C8E /* CreateHabitScreen.swift in Sources */,
+				FBED4CE42C6373F200B34FE1 /* HabitCategoryItem.swift in Sources */,
+				FB0AF0482C7F678700426A8C /* GlobalConstants.swift in Sources */,
+				FB575A6A2C6235EA00926082 /* BottomTabs.swift in Sources */,
+				FBE249E82C6621C900AC727C /* ChooseCategoryStep.swift in Sources */,
+				FBE249EA2C66221C00AC727C /* ChooseCategoryStep+Extensions.swift in Sources */,
+				FBCCC2612C681D8C00D9AD93 /* Int+Extensions.swift in Sources */,
+				FB575A5C2C62347100926082 /* TabsEnum.swift in Sources */,
+				FBED4CE82C63745300B34FE1 /* CreateHabitConstants.swift in Sources */,
+				FBD758162C60E15B00A11E2C /* HomeScreen.swift in Sources */,
+				FB7A600B2C6CF8C700ED4405 /* HabitFrequencyModel.swift in Sources */,
+				FB86778D2C860BAF0059F05B /* AuthViewModel.swift in Sources */,
+				FB86D06C2C7DD8B600A70B60 /* HabitSettings.swift in Sources */,
+				FB575A5F2C62349400926082 /* TabItemModel.swift in Sources */,
+				FBE249F92C6649A100AC727C /* NATextField.swift in Sources */,
+				FBAFEACF2C6A005000ACFA69 /* SetFrequencyStepReminderSheet.swift in Sources */,
+				FBE249F52C66476D00AC727C /* EdgeBorder.swift in Sources */,
+				FB575A642C62351900926082 /* TabItem.swift in Sources */,
+				FB3C561F2C89E33D007AE5C1 /* SignInWithEmailPasswordForm.swift in Sources */,
+				FBD1685F2C8B110F006D0F3D /* HabitDetails.swift in Sources */,
+				FBF387732C5EE9BB00839BEC /* View+Extensions.swift in Sources */,
 				FBF387562C5ED90500839BEC /* NavikaApp.swift in Sources */,
+				FBE97D452D2C83E100C649B9 /* TasksService.swift in Sources */,
+				FBE249FE2C66638F00AC727C /* NAGenericType.swift in Sources */,
+				FBCCC2642C681DBB00D9AD93 /* CreateHabitSteps.swift in Sources */,
+				FB7A60092C6CE91300ED4405 /* HomeScreenViewModel.swift in Sources */,
+				FB86A89E2C6B6DBC00823B4D /* HomeScreenConstants.swift in Sources */,
+				FB3C561C2C89E280007AE5C1 /* FirestoreEnums.swift in Sources */,
+				FB575A662C62353E00926082 /* HomeTabItem.swift in Sources */,
+				FB3388D82C85F15D00C449EC /* WelcomeView.swift in Sources */,
+				FBE249F72C66478700AC727C /* RoundedCorner.swift in Sources */,
+				FBE24A042C66755B00AC727C /* Set+Extensions.swift in Sources */,
+				FBD758142C60E04F00A11E2C /* Header.swift in Sources */,
+				FBAFEAD32C6A408F00ACFA69 /* RemindersList.swift in Sources */,
+				FB0EC3A12C87AFC700B36963 /* TasksScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +953,13 @@
 				DEVELOPMENT_TEAM = 3A4MTG5775;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Navika/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +984,13 @@
 				DEVELOPMENT_TEAM = 3A4MTG5775;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Navika/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +1026,166 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+		FB8677BD2C8610A40059F05B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		FBA6DFB32C88686900CF16C4 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB84F1792C9B81AC00F474E2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FB84F17B2C9B81AC00F474E2 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		FB84F17D2C9B81AC00F474E2 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		FB84F17F2C9B81AC00F474E2 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		FB84F1812C9B81AC00F474E2 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		FB84F1832C9B81AC00F474E2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FB84F1852C9B81AC00F474E2 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		FB84F1872C9B81AC00F474E2 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		FB84F1892C9B81AC00F474E2 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FB84F18B2C9B81AC00F474E2 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		FB84F18D2C9B81AC00F474E2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FB84F18F2C9B81AC00F474E2 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		FB84F1912C9B81AC00F474E2 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		FB84F1932C9B81AC00F474E2 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		FB84F1952C9B81AC00F474E2 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		FB84F1972C9B81AC00F474E2 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		FB84F1992C9B81AC00F474E2 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		FB84F19B2C9B81AC00F474E2 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		FB84F19D2C9B81AC00F474E2 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		FB84F19F2C9B81AC00F474E2 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		FB84F1A12C9B81AC00F474E2 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FB84F1A32C9B81AC00F474E2 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		FB84F1A52C9B81AC00F474E2 /* FirebaseVertexAI-Preview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB84F1782C9B81AC00F474E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseVertexAI-Preview";
+		};
+		FB8677BE2C8610A40059F05B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB8677BD2C8610A40059F05B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		FB8677C02C8610A40059F05B /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB8677BD2C8610A40059F05B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		FBA6DFB42C88686900CF16C4 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBA6DFB32C88686900CF16C4 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBF3874A2C5ED90500839BEC /* Project object */;
 }
