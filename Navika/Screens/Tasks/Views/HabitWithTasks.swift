@@ -63,7 +63,7 @@ struct HabitWithTasks: View {
           .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
       }
     }
-    .onChange(of: dateFilter) { oldValue, newValue in
+    .onChange(of: dateFilter, initial: true, { oldValue, newValue in
       Task {
         let test: [NATaskModel] = await self.habit.tasks.asyncMap { taskRef in
           await FirestoreHelper.shared.getDocument(with: taskRef)
@@ -72,10 +72,12 @@ struct HabitWithTasks: View {
         withAnimation {
           habitTasks = test.compactMap { $0 }.filter { task in
             if newValue == .all { return true }
-            return task.actionsDays.contains { $0.contains(Date().getCurrentWeekDay().abbreviation.lowercased()) }
+            return task.actionsDays.contains {
+              $0.contains(Date().getCurrentWeekDay().abbreviation.lowercased())
+            }
           }
         }
       }
-    }
+    })
   }
 }
