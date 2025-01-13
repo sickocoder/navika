@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct SetFrequencyStep: View {
+  @EnvironmentObject var habitSettings: HabitSettings
+  @StateObject var viewModel =  SetFrequencyViewModel()
+  
   var habitModel: HabitModel? = nil
-	@EnvironmentObject var habitSettings: HabitSettings
-	
-	@State var shouldShowRepeatitionPicker: Bool = false
-	@State var shouldShowReminderPicker: Bool = false
-	
-	@State var description: String = ""
-	@State var repetitionDays: Set<Int> = []
-	
-	@State private var startDate = Date()
-	@State private var reminders: [Date] = []
-	
+  var isEditing: Bool {
+    self.habitModel != nil
+  }
+  
 	
 	var body: some View {
 		ScrollView(.vertical) {
@@ -46,14 +42,14 @@ struct SetFrequencyStep: View {
 				}
 				
 				NACustomButton(title: "Set a reminder") {
-					self.shouldShowReminderPicker.toggle()
+          self.viewModel.shouldShowReminderPicker.toggle()
 				}
 				.background(.navikaBlack.opacity(0.03))
 				.clipShape(.rect(cornerRadius: 12))
 				
-				if self.reminders.count > 0 {
+        if self.viewModel.reminders.count > 0 {
 					NAFormContainer {
-						RemindersList(reminders: $reminders)
+            RemindersList(reminders: $viewModel.reminders)
 					}
 				}
 				
@@ -64,18 +60,38 @@ struct SetFrequencyStep: View {
 		}
 		.scrollContentBackground(.hidden)
 		.scrollDismissesKeyboard(.interactively)
-		.sheet(isPresented: $shouldShowRepeatitionPicker, content: {
-			SetFrequencyStepSheet(selection: $repetitionDays)
+    .toolbar {
+      if self.isEditing {
+        HStack(spacing: 16) {
+          Button("delete") {}
+            .tint(.red)
+          
+          Button("Save") {
+            Task {
+              if let habitModel = self.habitModel, let newHabitModel = self.habitSettings.makeHabitModel() {
+                do {
+                  try await FirestoreHelper.shared.update(document: habitModel.id, onCollection: .habits, withData: newHabitModel)
+                }
+              }
+            }
+          }
+            .buttonStyle(.bordered)
+            .buttonBorderShape(.capsule)
+        }
+      }
+    }
+    .sheet(isPresented: $viewModel.shouldShowRepeatitionPicker, content: {
+      SetFrequencyStepSheet(selection: $viewModel.repetitionDays)
 				.presentationDetents([.medium])
 		})
-		.sheet(isPresented: $shouldShowReminderPicker, content: {
+    .sheet(isPresented: $viewModel.shouldShowReminderPicker, content: {
 			SetFrequencyStepReminderSheet { time in
-				reminders.append(time)
+        viewModel.reminders.append(time)
 			}
 			.presentationDetents([.medium])
 		})
-		.onChange(of: repetitionDays) { oldValue, newValue in
-			self.habitSettings.reminderWeekDay = Array(repetitionDays)
+    .onChange(of: viewModel.repetitionDays) { oldValue, newValue in
+      self.habitSettings.reminderWeekDay = Array(viewModel.repetitionDays)
 		}
     .onAppear {
       if let habitModel = habitModel {

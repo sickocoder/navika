@@ -64,12 +64,12 @@ extension SetFrequencyStep {
 			Spacer()
 			
 			HStack {
-				Text("\(repetitionDays.getReadableDays())")
+        Text("\(viewModel.repetitionDays.getReadableDays())")
 				Image(systemName: "chevron.up.chevron.down")
 					.font(.caption)
 			}
 			.onTapGesture {
-				shouldShowRepeatitionPicker.toggle()
+        viewModel.shouldShowRepeatitionPicker.toggle()
 			}
 		}
 		.padding(.horizontal)

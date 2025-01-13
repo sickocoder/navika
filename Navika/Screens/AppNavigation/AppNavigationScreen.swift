@@ -31,9 +31,6 @@ struct AppNavigationScreen: View {
         
         NavigationView {
           TasksScreen()
-//            .navigationDestination(for: HabitTaskRoute.self) { route in
-//              habitTasksRouter.destination(for: route)
-//            }
         }
         .tag(AppNavigationConstants.appTabs[1].tag.rawValue)
         .toolbar(.hidden, for: .tabBar)

@@ -50,9 +50,9 @@ struct TasksScreen: View {
           let habits: [HabitModel] = try await FirestoreHelper.shared.getDocuments(from: .habits)
           
           if newValue == .all {
-            withAnimation { self.habitsList = habits }
+            self.habitsList = habits
           } else {
-            withAnimation { self.habitsList = habits.filter { $0.isForToday() } }
+            self.habitsList = habits.filter { $0.isForToday() }
           }
           
         } catch {

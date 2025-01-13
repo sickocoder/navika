@@ -25,6 +25,7 @@
 		FB575A662C62353E00926082 /* HomeTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A652C62353E00926082 /* HomeTabItem.swift */; };
 		FB575A682C62358000926082 /* AppNavigationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A672C62358000926082 /* AppNavigationScreen.swift */; };
 		FB575A6A2C6235EA00926082 /* BottomTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB575A692C6235EA00926082 /* BottomTabs.swift */; };
+		FB68F47C2D35B67F00EED7C8 /* SetFrequencyStep+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68F47B2D35B67800EED7C8 /* SetFrequencyStep+ViewModel.swift */; };
 		FB6B27E92C7C80300022E4C8 /* NAHabitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B27E82C7C80280022E4C8 /* NAHabitModel.swift */; };
 		FB79C7802D2EFDB00016793A /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB79C77F2D2EFDB00016793A /* Sequence+Extensions.swift */; };
 		FB7A60092C6CE91300ED4405 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A60082C6CE91300ED4405 /* HomeScreenViewModel.swift */; };
@@ -131,6 +132,7 @@
 		FB575A652C62353E00926082 /* HomeTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabItem.swift; sourceTree = "<group>"; };
 		FB575A672C62358000926082 /* AppNavigationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationScreen.swift; sourceTree = "<group>"; };
 		FB575A692C6235EA00926082 /* BottomTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabs.swift; sourceTree = "<group>"; };
+		FB68F47B2D35B67800EED7C8 /* SetFrequencyStep+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetFrequencyStep+ViewModel.swift"; sourceTree = "<group>"; };
 		FB6B27E82C7C80280022E4C8 /* NAHabitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAHabitModel.swift; sourceTree = "<group>"; };
 		FB79C77F2D2EFDB00016793A /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
 		FB7A60082C6CE91300ED4405 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 				FBCCC2652C681FAE00D9AD93 /* SetFrequencyStep+Extensions.swift */,
 				FBE24A012C666DFB00AC727C /* SetFrequencyStepSheet.swift */,
 				FBAFEACE2C6A005000ACFA69 /* SetFrequencyStepReminderSheet.swift */,
+				FB68F47B2D35B67800EED7C8 /* SetFrequencyStep+ViewModel.swift */,
 			);
 			path = SetFrequencyStep;
 			sourceTree = "<group>";
@@ -775,6 +778,7 @@
 				FBCCC2682C68200A00D9AD93 /* NAFormContainer.swift in Sources */,
 				FB86A8A02C6B6E5300823B4D /* TimeOfDaysTabs.swift in Sources */,
 				FB3C56182C88BA7B007AE5C1 /* FTUser.swift in Sources */,
+				FB68F47C2D35B67F00EED7C8 /* SetFrequencyStep+ViewModel.swift in Sources */,
 				FBE249F22C6644EB00AC727C /* NAStepView.swift in Sources */,
 				FBF3876C2C5EDEEF00839BEC /* TimeOfDay.swift in Sources */,
 				FBED4CE62C6373FE00B34FE1 /* CategoryList.swift in Sources */,

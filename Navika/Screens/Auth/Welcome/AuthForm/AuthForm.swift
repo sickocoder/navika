@@ -48,8 +48,6 @@ struct AuthForm: View {
             Task {
               do {
                 let authResult = try await authViewMode.googleAuth(presentingViewController)
-                print(authResult.user)
-                
                 self.isUserSignedIn = true
               } catch {
                 print(error)
